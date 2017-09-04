@@ -1,0 +1,47 @@
+
+.icon-clock {
+	display: none;
+}
+
+.icon-cheackin {
+	display: none;
+}
+
+@media (min-width: 768px) {
+
+	.icon-clock {
+	display: block;
+	}
+
+	.icon-cheackin {
+	display: block;
+	}
+}
+
+@font-face { 
+  font-family: "ProximaNova Light"; 
+  src: url('../fonts/Proxima Nova/Proxima Nova Light.otf')  format('opentype');
+  font-weight: 300; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: "ProximaNova Bold"; 
+  src: url('../fonts/Proxima Nova/Proxima Nova Bold.otf')  format('opentype');
+  font-weight: 700; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: "ProximaNova SemiBold"; 
+  src: url('../fonts/Proxima Nova/Proxima Nova Semibold.otf')  format('opentype');
+  font-weight: 500; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: "ProximaNova Regular"; 
+  src: url('../fonts/Proxima Nova/Proxima Nova Regular.otf')  format('opentype');
+  font-weight: 400; 
+  font-style: normal; 
+}

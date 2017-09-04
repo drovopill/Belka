@@ -3,8 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Скалодром</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+<!-- 	<script  src="lib/jquery/jquery-3.2.1.min.js"></script> -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="lib/OwlC/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/OwlC/dist/assets/owl.theme.default.min.css"> -->
+	<!-- <script src="lib/OwlC/dist/owl.carousel.min.js"></script>
+	<script src="js/js.js"></script> -->
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -15,19 +22,21 @@
 				<ul class="info__list">
 					<li class="info__item icon-clock">24 часа</li>
 					<li class="info__item icon-phone"><a href="tel:+88005553535">8(800)555-35-35</a> </li>
-					<li class="info-item icon-cheackin">Выборгское шоссе</li>
+					<li class="info__item icon-cheackin">Выборгское шоссе</li>
 				</ul>
+				<a href="" class="all-nav__btn"></a>
 			</div>
 		</div>
 
+		<div class="promo-background-wrap"> <!-- promo-bgi-start -->
 		<div class="page-header__main">
-			<div class="container">
-				<a href="#" class="logo"><img src="" alt=""></a>
-				<a href="#" class="page-header__btn"></a>
+			<div class="container page-header__main-wrap">
+				<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+				<a href="#" class="page-header__btn">Купить билет</a>
 			
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<li class="main-nav__item active">
+						<li class="main-nav__item">
 							<a href="#" class="main-nav__link">Трассы</a>
 						</li>
 						<li class="main-nav__item">
@@ -46,23 +55,22 @@
 				</nav>
 			</div>
 		</div>
-	
+		
+		<section class="promo">
+			<div class="container">
+				<h1><span>Скалодром</span></h1>
+				<p class="promo__text">Заберись на вершину, не уезжая в горы!<br> Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня. <br>Bключает в себя 2 детские трассы и 3 взрослые.<br> Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
+			</div>
+		</section>
+		</div> <!-- promo-bgi-end -->
 	</header>
 
-
 	<main>
-	<section class="promo">
-		<div class="container">
-			<h1>Скалодром</h1>
-			<p class="promo__text"></p>
-		</div>
-	</section>
-
-
 	<section class="track">
-		<div class="container">
-			<h2 class="title-white">Трассы</h2>
+		<div class="container space-around">
+			<h2 class="track-title">Трассы</h2>
 
+<!-- 		<div class="owl-carousel car"> -->
 			<div class="track__column">
 				<div class="track__column__name">
 					<h3 class="track__column__title">Трасса #1</h3>
@@ -71,8 +79,8 @@
 						<li class="track__column__item">Возраст 13+</li>
 					</ul>
 				</div>
-				<div class="track__column__img"><img src="" alt=""></div>
-				<div class="track_column_text"><p></p></div>
+				<div class="track__column__img"><img src="img/track1.png" alt=""></div>
+				<div class="track_column_text"><p>Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -83,8 +91,8 @@
 						<li class="track__column__item">Возраст 4+</li>
 					</ul>
 				</div>
-				<div class="track__column__img"><img src="" alt=""></div>
-				<div class="track_column_text"><p></p></div>
+				<div class="track__column__img"><img src="img/track2.png" alt=""></div>
+				<div class="track_column_text"><p>Для людей с разной физ. подготовкой Различные зацепы и рельефы стены.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -95,8 +103,8 @@
 						<li class="track__column__item">Возраст 13+</li>
 					</ul>
 				</div>
-				<div class="track__column__img"><img src="" alt=""></div>
-				<div class="track_column_text"><p></p></div>
+				<div class="track__column__img"><img src="img/track3.png" alt=""></div>
+				<div class="track_column_text"><p>Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -107,8 +115,8 @@
 						<li class="track__column__item">Возраст 4+</li>
 					</ul>
 				</div>
-				<div class="track__column__img"><img src="" alt=""></div>
-				<div class="track_column_text"><p></p></div>
+				<div class="track__column__img"><img src="img/track4.png" alt=""></div>
+				<div class="track_column_text"><p>Самая невысокая трасса. Специальные  зацепы для детей.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -119,61 +127,64 @@
 						<li class="track__column__item">Возраст 13+</li>
 					</ul>
 				</div>
-				<div class="track__column__img"><img src="" alt=""></div>
-				<div class="track_column_text"><p></p></div>
+				<div class="track__column__img"><img src="img/track5.png" alt=""></div>
+				<div class="track_column_text"><p>Средняя высота и сложность.Физ. подготовка не обязательна.</p></div>
 			</div>
+		<!-- </div> -->
 		</div>
 	</section>
 
 
 	<section class="stock">
-		<div class="container">
-			<h2>Акции</h2>
+		<div class="container space-between">
+			<h2 class="stock-title">Акции</h2>
 			<div class="stock__item">
-				<img src="" alt="" class="stock__item__img">
-				<span class="stock__item__subline"></span>
+				<img src="img/stock(768)1.png" alt="" class="stock__item__img">
+				<span class="stock__item__subline">Компаниям от 5 чел. скидка 10%</span>
 			</div>
 			<div class="stock__item">
-				<img src="" alt="" class="stock__item__img">
-				<span class="stock__item__subline"></span>
+				<img src="img/stock(768)2.png" alt="" class="stock__item__img">
+				<span class="stock__item__subline">Многодетным семьям скидка 20%</span>
 			</div>
 			<div class="stock__item">
-				<img src="" alt="" class="stock__item__img">
-				<span class="stock__item__subline"></span>
+				<img src="img/stock(768)3.png" alt="" class="stock__item__img">
+				<span class="stock__item__subline">Студентам по карте isic 20%</span>
 			</div>
 		</div>
 	</section>
 
 
 	<section class="features">
-		<div class="container">
-			<h2 class="white">У нас</h2>
-			<div class="features__item">
-				<span class="icon-..."></span>
-				<p class="features__text"></p>
-			</div>
-			<div class="features__item">
-				<span class="icon-..."></span>
-				<p class="features__text"></p>
-			</div>
-			<div class="features__item">
-				<span class="icon-..."></span>
-				<p class="features__text"></p>
+		<div class="features-wrap">
+			<h2 class="features__title">У нас</h2>
+			<div class="feature__list">
+				<div class="features__item">
+					<span class="icon-rope"></span>
+					<p class="features__text">Альпинистское снаряжение  и страховочные устройства французской компании Petzl</p>
+				</div>
+				<div class="features__item">
+					<span class="icon-rope"></span>
+					<p class="features__text">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)</p>
+				</div>
+				<div class="features__item">
+					<span class="icon-rope"></span>
+					<p class="features__text">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос! </p>
+				</div>
 			</div>
 		</div>
 	</section>
 
 
 	<section class="gallery">
-		<div class="container">
+		<div class="container space-around">
 			<div class="gallery__item">
-				<img src="" alt="" class="gallery__item__img">
+				<img src="img/gallery1.png" alt="" class="gallery__item__img">
 			</div>
 			<div class="gallery__item">
-				<img src="" alt="" class="gallery__item__img">
+				<img src="img/gallery2.png" alt="" class="gallery__item__img">
 			</div>
 			<div class="gallery__item">
-				<img src="" alt="" class="gallery__item__img">
+				<img src="img/gallery3.png" alt="" class="gallery__item__img">
 			</div>
 		</div>
 	</section>
