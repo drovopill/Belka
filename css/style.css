@@ -54,7 +54,6 @@
 	font-family: "ProximaNova Light";
 	font-size: 16px;
 	color: #353232;
-	/*list-style-type: none;*/
 }
 
 .info__item a{
@@ -74,6 +73,15 @@
 	list-style-image: url();
 }
 
+/*-----------------------------------------------------*/
+
+.burger {
+	background-image: url(../img/Burger.png);
+	background-repeat: no-repeat;
+}
+
+/*-----------------------------------------------------*/
+
 
 .page-header__main-wrap {
 	align-items: center;
@@ -92,17 +100,15 @@
 	padding: 5px 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 	.page-header__btn{
 		display: none;
 	}
 }
-@media (max-width: 560px) {
+@media (max-width: 768px) {
 	.page-header__main {
 		display: none;
 	}
-}
-@media (max-width: 560px) {
 	.icon-clock, .icon-cheackin {
 		display: none;
 	}
@@ -111,6 +117,9 @@
 	}
 	.info__item {
 		margin-left: 30px;
+	}
+	.promo-background-wrap {
+	
 	}
 }
 
@@ -160,10 +169,53 @@ h1 {
 	max-width: 600px;
 	font-size: 18px;
 	line-height: 30px;
+	width: 100%;
+	margin: 0;
 }
 
+.promo__text:last-child {
+	margin-bottom: 20px;
+}
 
+.promo__btn {
+	display: none;
+	background-color: #eeeef4;
+	border: 2px solid #000;
+	padding: 5px;
+	font-family: "ProximaNova Regular";
+	font-size: 16px;
+	text-decoration: none;
+	color: #353232;
+	margin: 0;
+	padding: 5px 20px;
+	width: 100px;
+}
 
+.flex-deriction-column {
+	flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+	.promo__btn{
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.promo__text {
+		margin-bottom: 40px;
+		width: 70%;
+	}
+	.promo__text:last-child {
+	display: none;
+	}
+	h1 {
+		margin-bottom: 50px;
+	}
+	.hide-768 {
+		display: none;
+	}
+}
 
 /*track*/
 .track {
@@ -227,6 +279,7 @@ h1 {
 	max-width: 194px;
 	text-align: center;
 	padding: 0 10px 20px;
+	min-height: 126px;
 }
 .track_column_text p {
 	font-family: "Open sans";
@@ -368,6 +421,200 @@ h1 {
 
 
 /*prices*/
-.prices {
-	
+.last-bgi {
+	background-image: url(../img/last-bgi.png);
+	background-size: cover;
+	background-position: center;
+	min-height: 1450px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
 }
+
+.prices {
+	margin: 60px;
+}
+
+.prices-title {
+	font-family: "ProximaNova Bold";
+	font-size: 36px;
+	width: 100%;
+	text-align: center;
+}
+
+.prices__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 40px;
+}
+
+.prices__table th {
+	font-family: "Open Sans";
+	font-size: 18px;
+	width: 33%;
+	background-color: #59656f;
+	opacity: 0.7;
+	color: #dadae7;
+	text-transform: uppercase;
+	padding: 15px 0;
+	font-weight: normal;
+}
+
+.prices__table td {
+	font-family: "Open Sans";
+	font-size: 18px;
+	width: 33%;
+	color: #22313f;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.prices__table span {
+	text-transform: none;
+	display: block;
+}
+
+.plug {
+	height: 20px;
+}
+
+.td-whith-bgc {
+	background-color: #cfd9e2;
+}
+
+td.bottom-td-whith-bgc {
+	background-color: #cfd9e2;
+	width: 50%;
+	text-align: left;
+	padding-left: 60px;
+}
+
+.prices__btn {
+	font-family: "ProximaNova Regular";
+	background-color: rgba(128, 0, 0, 0.851);
+	opacity: 0.8;
+	padding: 15px 25px;
+	color: #dadae7;
+	font-size: 16px;
+	text-transform: uppercase;
+	justify-content: center;
+	margin-right: 20px;
+}
+
+.center {
+	justify-content: center;
+}
+
+.safety {
+	font-family: "Open Sans";
+	font-size: 16px;
+	color: #22313f;
+	padding-top: 15px;
+	margin-left: 20px;
+}
+
+
+
+/*reviews*/
+.reviews-bgc {
+	background-color: rgba(231, 231, 231, .7);
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.reviews-title {
+	font-family: "ProximaNova Bold";
+	font-size: 36px;
+	width: 100%;
+	text-align: center;
+}
+
+.reviews__column {
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+	al
+}
+
+.reviews__column__img img {
+	border-radius: 50%;
+}
+
+.reviews__name {
+	font-family: "Open Sans";
+	font-size: 16px;
+	text-align: center;
+	color: #22313f;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.reviews__post {
+	font-family: "Open Sans";
+	font-size: 16px;
+	text-align: center;
+	color: #22313f;
+	margin-top: 8px;
+}
+
+.reviews_text {
+	font-family: "Open Sans";
+	font-size: 18px;
+	font-weight: 700;
+	color: #22313f;
+	margin-bottom: 20px;
+}
+
+
+
+/*footer*/
+footer {
+	background-color: #22313f;
+}
+
+.footer__info {
+	width: 40%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.footer__map {
+	width: 60%;
+}
+
+.footer__info__list {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding-left: 0;
+}
+
+.footer__info-item {
+	font-family: "ProximaNova Light";
+	font-size: 16px;
+	color: #dadae7;
+}
+
+.footer__info-item a {
+	text-decoration: none;
+	color: #dadae7;
+}
+
+.footer-nav {
+	margin: 40px 0;
+}
+
+.footer-nav__item {
+	margin: 15px 0;
+	list-style-type: none;
+}
+
+.footer-nav__link {
+	font-family: "Open Sans";
+	font-size: 18px;
+	color: #dadae7;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+

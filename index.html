@@ -4,73 +4,72 @@
 	<meta charset="UTF-8">
 	<title>Скалодром</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
-<!-- 	<script  src="lib/jquery/jquery-3.2.1.min.js"></script> -->
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="lib/OwlC/dist/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="lib/OwlC/dist/assets/owl.theme.default.min.css"> -->
-	<!-- <script src="lib/OwlC/dist/owl.carousel.min.js"></script>
-	<script src="js/js.js"></script> -->
-	
+	<link rel="stylesheet" href="css/chernovick.css">
+	<link rel="stylesheet" href="lib/OwlC/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="lib/OwlC/dist/assets/owl.theme.default.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	
 	<header class="page-header">
 		<div class="page-header__info">
-			<div class="container">
+			<div class="info__inner">
 				<ul class="info__list">
-					<li class="info__item icon-clock">24 часа</li>
-					<li class="info__item icon-phone"><a href="tel:+88005553535">8(800)555-35-35</a> </li>
-					<li class="info__item icon-cheackin">Выборгское шоссе</li>
+					<li class="info__item"><p class="info__item__text info__item__text--clock">24 часа</p></li>
+					<li class="info__item info__item__text--phone"><a class="phone-link icon-phone" href="tel:+88005553535">8(800)555-35-35</a> </li>
+					<li class="info__item"><p class="info__item__text info__item__text--cheackin">Выборгское шоссе</p></li>
 				</ul>
-				<a href="" class="all-nav__btn"></a>
+				<span class="info__burger"></span>
 			</div>
 		</div>
 
 		<div class="promo-background-wrap"> <!-- promo-bgi-start -->
-		<div class="page-header__main">
-			<div class="container page-header__main-wrap">
-				<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
-				<a href="#" class="page-header__btn">Купить билет</a>
+			<div class="page-header__main">
+				<div class="main__inner">
+					<a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+					<a href="#" class="page-header__btn">Купить билет</a>
+				
+					<nav class="page-header__main-nav">
+						<ul class="main-nav__list">
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Трассы</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Акции</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Цены</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Отзывы</a>
+							</li>
+							<li class="main-nav__item">
+								<a href="#" class="main-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="social"></div>
+				</div>
+			</div>
 			
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item">
-							<a href="#" class="main-nav__link">Трассы</a>
-						</li>
-						<li class="main-nav__item">
-							<a href="#" class="main-nav__link">Акции</a>
-						</li>
-						<li class="main-nav__item">
-							<a href="#" class="main-nav__link">Цены</a>
-						</li>
-						<li class="main-nav__item">
-							<a href="#" class="main-nav__link">Отзывы</a>
-						</li>
-						<li class="main-nav__item">
-							<a href="#" class="main-nav__link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		
-		<section class="promo">
-			<div class="container">
-				<h1><span>Скалодром</span></h1>
-				<p class="promo__text">Заберись на вершину, не уезжая в горы!<br> Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня. <br>Bключает в себя 2 детские трассы и 3 взрослые.<br> Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
-			</div>
-		</section>
+			<section class="promo">
+				<div class="promo__inner">
+					<h1 class="promo__title">Скалодром</h1>
+					<p class="promo__text">Заберись на вершину, не уезжая в горы!</p>
+					<p class="promo__text promo__text--hiden">Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня. <br>Bключает в себя 2 детские трассы и 3 взрослые.<br> Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности.</p>
+					<a href="#" class="promo__btn">Купить билет</a>
+				</div>
+			</section>
 		</div> <!-- promo-bgi-end -->
 	</header>
 
 	<main>
 	<section class="track">
-		<div class="container space-around">
-			<h2 class="track-title">Трассы</h2>
+		<div class="track__inner">
+			<h2 class="track__title">Трассы</h2>
 
-<!-- 		<div class="owl-carousel car"> -->
+		<div class="owl-carousel track__carousel">
 			<div class="track__column">
 				<div class="track__column__name">
 					<h3 class="track__column__title">Трасса #1</h3>
@@ -80,7 +79,7 @@
 					</ul>
 				</div>
 				<div class="track__column__img"><img src="img/track1.png" alt=""></div>
-				<div class="track_column_text"><p>Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.</p></div>
+				<div class="track__column__text"><p>Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -92,7 +91,7 @@
 					</ul>
 				</div>
 				<div class="track__column__img"><img src="img/track2.png" alt=""></div>
-				<div class="track_column_text"><p>Для людей с разной физ. подготовкой Различные зацепы и рельефы стены.</p></div>
+				<div class="track__column__text"><p>Для людей с разной физ. подготовкой Различные зацепы и рельефы стены.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -104,7 +103,7 @@
 					</ul>
 				</div>
 				<div class="track__column__img"><img src="img/track3.png" alt=""></div>
-				<div class="track_column_text"><p>Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.</p></div>
+				<div class="track__column__text"><p>Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -116,7 +115,7 @@
 					</ul>
 				</div>
 				<div class="track__column__img"><img src="img/track4.png" alt=""></div>
-				<div class="track_column_text"><p>Самая невысокая трасса. Специальные  зацепы для детей.</p></div>
+				<div class="track__column__text"><p>Самая невысокая трасса. Специальные  зацепы для детей.</p></div>
 			</div>
 
 			<div class="track__column">
@@ -128,36 +127,38 @@
 					</ul>
 				</div>
 				<div class="track__column__img"><img src="img/track5.png" alt=""></div>
-				<div class="track_column_text"><p>Средняя высота и сложность.Физ. подготовка не обязательна.</p></div>
+				<div class="track__column__text"><p>Средняя высота и сложность.Физ. подготовка не обязательна.</p></div>
 			</div>
-		<!-- </div> -->
+		</div>
 		</div>
 	</section>
 
 
 	<section class="stock">
-		<div class="container space-between">
+		<div class="stock__inner">
 			<h2 class="stock-title">Акции</h2>
-			<div class="stock__item">
-				<img src="img/stock(768)1.png" alt="" class="stock__item__img">
-				<span class="stock__item__subline">Компаниям от 5 чел. скидка 10%</span>
-			</div>
-			<div class="stock__item">
-				<img src="img/stock(768)2.png" alt="" class="stock__item__img">
-				<span class="stock__item__subline">Многодетным семьям скидка 20%</span>
-			</div>
-			<div class="stock__item">
-				<img src="img/stock(768)3.png" alt="" class="stock__item__img">
-				<span class="stock__item__subline">Студентам по карте isic 20%</span>
+			<div class="stock__item-wrap">
+				<div class="stock__item">
+					<img src="img/stock(768)1.png" alt="" class="stock__item__img">
+					<span class="stock__item__subline">Компаниям от 5 чел. скидка 10%</span>
+				</div>
+				<div class="stock__item">
+					<img src="img/stock(768)2.png" alt="" class="stock__item__img">
+					<span class="stock__item__subline">Многодетным семьям скидка 20%</span>
+				</div>
+				<div class="stock__item">
+					<img src="img/stock(768)3.png" alt="" class="stock__item__img">
+					<span class="stock__item__subline">Студентам по карте isic 20%</span>
+				</div>
 			</div>
 		</div>
 	</section>
 
 
 	<section class="features">
-		<div class="features-wrap">
+		<div class="features__inner">
 			<h2 class="features__title">У нас</h2>
-			<div class="feature__list">
+			<div class="features__wrap">
 				<div class="features__item">
 					<span class="icon-rope"></span>
 					<p class="features__text">Альпинистское снаряжение  и страховочные устройства французской компании Petzl</p>
@@ -176,86 +177,166 @@
 
 
 	<section class="gallery">
-		<div class="container space-around">
-			<div class="gallery__item">
-				<img src="img/gallery1.png" alt="" class="gallery__item__img">
-			</div>
-			<div class="gallery__item">
-				<img src="img/gallery2.png" alt="" class="gallery__item__img">
-			</div>
-			<div class="gallery__item">
-				<img src="img/gallery3.png" alt="" class="gallery__item__img">
+		<div class="gallery__inner">
+			<div class="owl-carousel gallery__carousel">
+				<div class="gallery__item">
+					<img src="img/gallery1.png" alt="" class="gallery__item__img">
+				</div>
+				<div class="gallery__item">
+					<img src="img/gallery2.png" alt="" class="gallery__item__img">
+				</div>
+				<div class="gallery__item">
+					<img src="img/gallery3.png" alt="" class="gallery__item__img">
+				</div>
 			</div>
 		</div>
 	</section>
 
-
+	<div class="last-bgi">
 	<section class="prices">
-		<div class="container">
-			<h2>Цены</h2>
-			<table class="prices__table"></table>
-			<a class="prices__btn"></a>
-			<a href="" class="safety"></a>
+		<div class="prices__inner">
+			<h2 class="prices-title">Цены</h2>
+
+			<div class="prices__accordion">
+				<div class="prices__outer">Выберите возраст
+					<div class="accordion__text"><p>Детский от 4 лет</p></div>
+					<div class="accordion__text"><p>Взрослый от 4 лет</p></div>
+				</div>
+				<div class="prices__outer">Выберите место
+					<div class="accordion__text"><p>Все трассы Веревочный парк + скалодром</p></div>
+					<div class="accordion__text"><p>Скалодром</p></div>
+					<div class="accordion__text"><p>Веревочный парк</p></div>
+				</div>
+				<div class="prices__outer">Выберите длительность
+					<div class="accordion__text"><p>Прохождение парка за 3 часа </p></div>
+					<div class="accordion__text"><p>Прохождение парка за 12 часов </p></div>
+				</div>
+			</div>
+
+			<table class="prices__table">
+				<tr>
+					<td></td>
+					<th>Детский <span>от 4 лет</span></th>
+					<th>Взорслый/детский <span>от 7 лет</span></th>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-whith-bgc">Прохождение препятствий парка 3 часа</td>
+				</tr>
+				<tr>
+					<th>Все трассы верёвочный парк + скалодром</th>
+					<td>2200 ₽</td>
+					<td>2500 ₽</td>
+				</tr>
+				<tr>
+					<th>Скалодром</th>
+					<td>1000 ₽</td>
+					<td>1300 ₽</td>
+				</tr>
+				<tr>
+					<th>Верёвочный парк</th>
+					<td>1200 ₽</td>
+					<td>1500 ₽</td>
+				</tr>
+				<tr>
+					<td class="plug" colspan="3"></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="td-whith-bgc">Прохождение препятствий парка 12 часов</td>
+				</tr>
+				<tr>
+					<th>Все трассы верёвочный парк + скалодром</th>
+					<td>5500 ₽</td>
+					<td>6000 ₽</td>
+				</tr>
+				<tr>
+					<th>Скалодром</th>
+					<td>3000 ₽</td>
+					<td>3500 ₽</td>
+				</tr>
+				<tr>
+					<th>Верёвочный парк</th>
+					<td>4000 ₽</td>
+					<td>4500 ₽</td>
+				</tr>
+				<tr>
+					<td colspan="3">Каждый дополнительный час +500</td>
+				</tr>
+				<tr>
+					<td class="bottom-td-whith-bgc" colspan="2">Персональный оператор</td>
+					<td class="bottom-td-whith-bgc">600/час</td>
+				</tr>
+
+			</table>
+			<div class="prices__btn__wrap">
+				<a href="#" class="prices__btn">Купить билет</a>
+				<a href="#" class="safety">Техника безопасности (PDF)</a>
+			</div>
 		</div>
 	</section>
 
 
 	<section class="reviews">
-		<div class="container">
-			<h2>Отзывы</h2>
-			<div class="reviews__column">
-				<div class="reviews__column__img">
-					<img src="" alt="">
+		<div class="reviews__inner">
+			<h2 class="reviews-title">Отзывы</h2>
+			<div class="owl-carousel reviews__carousel">
+				<div class="reviews__column">
+					<div class="reviews__column__img">
+						<img src="img/reviews1.png" alt="">
+					</div>
+					<div class="reviews__column__text">
+						<p class="reviews__name">Алексей</p>
+						<p class="reviews__post">Скалолаз-любитель</p>
+						<a class="icon__youtube"></a>
+						<a class="icon__vk"></a>
+						<p class="reviews_text">Интересные трассы, вкусная еда и самые приветливые тренера!</p>
+					</div>
 				</div>
-				<div class="reviews__column__text">
-					<p class="reviews__name"></p>
-					<p class="reviews__post"></p>
-					<a class="icon__youtube"></a>
-					<a class="icon__vk"></a>
-					<p class="reviews_text"></p>
+
+				<div class="reviews__column">
+					<div class="reviews__column__img">
+						<img src="img/reviews2.png" alt="">
+					</div>
+					<div class="reviews__column__text">
+						<p class="reviews__name">Мария</p>
+						<p class="reviews__post">Студентка</p>
+						<a class="icon__youtube"></a>
+						<a class="icon__vk"></a>
+						<p class="reviews_text">Лучший скалодром в городе!</p>
+					</div>
+				</div>
+
+				<div class="reviews__column">
+					<div class="reviews__column__img">
+						<img src="img/reviews3.png" alt="">
+					</div>
+					<div class="reviews__column__text">
+						<p class="reviews__name">Екатерина</p>
+						<p class="reviews__post">Мама троих детей</p>
+						<a class="icon__youtube"></a>
+						<a class="icon__vk"></a>
+						<p class="reviews_text">Парк «BELKA» - отличная альтернатива наскучившим походам в кино и кафе.</p>
+					</div>
 				</div>
 			</div>
-
-			<div class="reviews__column">
-				<div class="reviews__column__img">
-					<img src="" alt="">
-				</div>
-				<div class="reviews__column__text">
-					<p class="reviews__name"></p>
-					<p class="reviews__post"></p>
-					<a class="icon__youtube"></a>
-					<a class="icon__vk"></a>
-					<p class="reviews_text"></p>
-				</div>
-			</div>
-
-			<div class="reviews__column">
-				<div class="reviews__column__img">
-					<img src="" alt="">
-				</div>
-				<div class="reviews__column__text">
-					<p class="reviews__name"></p>
-					<p class="reviews__post"></p>
-					<a class="icon__youtube"></a>
-					<a class="icon__vk"></a>
-					<p class="reviews_text"></p>
-				</div>
-			</div>
-
 		</div>
 	</section>
+	</div>
 	</main>
 
 
 	<footer>
-		<div class="container">
+		<div class="footer__inner">
+			<div class="footer__map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.4942257789364!2d30.315680316101403!3d59.95712498188286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631492ac25899%3A0x8ff24940c5738c!2z0KjQutC-0LvQsCDQuNC90YLQtdGA0L3QtdGCLdGC0LXRhdC90L7Qu9C-0LPQuNC5IEVwaWMgU2tpbGxz!5e0!3m2!1sru!2sru!4v1502634465490" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
 			<div class="footer__info">
 				<ul class="footer__info__list">
 					<li class="footer__info-item icon-cheackin">Выборгское шоссе</li>
 					<li class="footer__info-item icon-phone"><a href="tel:+88005553535">8(800)555-35-35</a> </li>
 				</ul>
 				<ul class="footer-nav">
-					<li class="footer-nav__item--active">
+					<li class="footer-nav__item">
 						<a href="#" class="footer-nav__link">Трассы</a>
 					</li>
 					<li class="footer-nav__item">
@@ -277,8 +358,11 @@
 					<li><a href="" class="icon-vk"></a></li>
 				</ul>
 			</div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.4942257789364!2d30.315680316101403!3d59.95712498188286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631492ac25899%3A0x8ff24940c5738c!2z0KjQutC-0LvQsCDQuNC90YLQtdGA0L3QtdGCLdGC0LXRhdC90L7Qu9C-0LPQuNC5IEVwaWMgU2tpbGxz!5e0!3m2!1sru!2sru!4v1502634465490" width="60%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</footer>
+
+	<script  src="lib/jquery/jquery-3.2.1.min.js"></script>
+	<script src="lib/OwlC/dist/owl.carousel.min.js"></script>
+	<script src="js/js.js"></script>
 </body>
 </html>
